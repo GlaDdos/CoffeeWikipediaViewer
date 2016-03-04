@@ -1,0 +1,147 @@
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 1em;
+  margin: 0;
+  margin-top: 1em;
+
+  background-color: #4696e5;
+
+  color: white;
+
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  text-shadow: 0.1em 0.1em 0.08em #2d6a85;
+
+}
+a{
+  text-decoration: none;
+}
+input{
+  background: none;
+  border: 0;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.08em #2d6a85;
+  border-bottom: white;
+  border-bottom: 2px solid rgba(249, 249, 249, 0.29);
+
+  font-size: 1em;
+}
+
+input:hover, input:focus{
+  border-color: white;
+}
+
+input::-webkit-input-placeholder {
+color: rgba(249, 249, 249, 0.29) !important;
+text-shadow: none;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: rgba(249, 249, 249, 0.29) !important;
+text-shadow: none;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: rgba(249, 249, 249, 0.29) !important;
+text-shadow: none;
+}
+
+input:-ms-input-placeholder {
+color: rgba(249, 249, 249, 0.29) !important;
+text-shadow: none;
+}
+
+.container{
+height: 80vh;
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+}
+
+.searchBar{
+  margin-right: auto;
+  margin-left: auto;
+  overflow-y: visible;
+}
+
+.search, .random{
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 2em;
+  margin: 0.5em;
+  text-shadow: none;
+}
+
+.search:hover, .random:hover{
+  text-shadow: 0.1em 0.1em 0.08em #2d6a85;
+  cursor: pointer;
+}
+
+.search:active, .random:active{
+  color: rgb(44, 224, 35);
+}
+
+h1{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+a{
+  color: inherit;
+}
+
+.artList{
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1.2em;
+  background-color: #3574b3;
+  background-color: rgba(245, 245, 245, 0.11);
+  border: 1px solid #3574b3;
+  border-radius: 0.6em;
+
+  margin-bottom: 0.6em;
+}
+
+.searchField{
+    display: inline-block;
+    display: none;
+}
+
+.artList:hover{
+  background-color: #3386d7;
+  border: 1px solid #5ea9f4;
+}
+
+.info{
+    min-height: 2em;
+}
+
+.info h2{
+  text-align: center;
+  margin: 0;
+}
+
+.ion-close-round{
+  font-weight: normal;
+  color: white;
+  color: rgba(249, 249, 249, 0.6);
+}
+
+.ion-close-round:hover{
+  color: white;
+}
+
+.ion-close-round:active{
+  color: rgb(44, 224, 35);
+}
